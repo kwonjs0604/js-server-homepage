@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — KWON JUN SEOK</title>
+  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="portfolio.css?v=1" />
+  <meta name="description" content="KWON JUN SEOK — Student Developer Portfolio" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="logo">JS-SERVER</div>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="#about">소개</a>
+      <a href="#skills">기술</a>
+      <a href="#projects">프로젝트</a>
+      <a href="#contact">연락</a>
+    </nav>
+    <a class="btn" href="https://github.com/dbstjdrbl7" target="_blank" rel="noopener">GitHub →</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="pf-hero">
+    <div class="pf-hero-inner">
+      <img class="pf-avatar" src="https://avatars.githubusercontent.com/u/79630307?v=4" alt="avatar" />
+      <div class="pf-hero-text">
+        <div class="badge">Student Developer</div>
+        <h1>권준석 <span class="name-en">Kwon Jun Seok</span></h1>
+        <p>서버 인프라 구축부터 웹 서비스 개발까지.<br/>직접 만들고, 직접 운영하며 배우는 개발자.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">프로젝트 보기</a>
+          <a class="btn ghost" href="https://github.com/dbstjdrbl7" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section alt">
+    <div class="section-inner pf-about">
+      <div>
+        <div class="section-label">ABOUT</div>
+        <h2>소개</h2>
+        <p>마인크래프트 서버 운영에서 시작해 웹 대시보드, 디스코드 봇, 배달 경로 최적화 시스템까지 다양한 프로젝트를 직접 설계하고 운영 중인 학생 개발자입니다.</p>
+        <p style="margin-top:12px;">서버 인프라(PM2, Velocity, Cloudflare Tunnel)를 직접 관리하며, Node.js 기반 풀스택 개발과 Minecraft 플러그인(Java) 개발 경험을 보유하고 있습니다.</p>
+      </div>
+      <div class="pf-info-list">
+        <div class="pf-info-item">
+          <span class="pf-info-label">이름</span>
+          <span>권준석 (Kwon Jun Seok)</span>
+        </div>
+        <div class="pf-info-item">
+          <span class="pf-info-label">직함</span>
+          <span>Student Developer</span>
+        </div>
+        <div class="pf-info-item">
+          <span class="pf-info-label">GitHub</span>
+          <a href="https://github.com/dbstjdrbl7" target="_blank" rel="noopener">@dbstjdrbl7</a>
+        </div>
+        <div class="pf-info-item">
+          <span class="pf-info-label">이메일</span>
+          <a href="mailto:dbstjdrbl7@gmail.com">dbstjdrbl7@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-inner">
+      <div class="section-label">SKILLS</div>
+      <h2>기술 스택</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <div class="skill-group-title">Backend</div>
+          <div class="skill-tags">
+            <span class="skill-tag main">Node.js</span>
+            <span class="skill-tag main">Express</span>
+            <span class="skill-tag">Socket.io</span>
+            <span class="skill-tag">SQLite</span>
+            <span class="skill-tag">REST API</span>
+            <span class="skill-tag">Java</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">Frontend</div>
+          <div class="skill-tags">
+            <span class="skill-tag main">HTML/CSS</span>
+            <span class="skill-tag main">JavaScript</span>
+            <span class="skill-tag">EJS</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">Bot & Automation</div>
+          <div class="skill-tags">
+            <span class="skill-tag main">Discord.js</span>
+            <span class="skill-tag">OAuth2</span>
+            <span class="skill-tag">Passport.js</span>
+            <span class="skill-tag">Google Gemini AI</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">Infra & DevOps</div>
+          <div class="skill-tags">
+            <span class="skill-tag main">PM2</span>
+            <span class="skill-tag main">Cloudflare Tunnel</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Velocity (MC Proxy)</span>
+            <span class="skill-tag">Paper MC</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section alt">
+    <div class="section-inner">
+      <div class="section-label">PROJECTS</div>
+      <h2>프로젝트</h2>
+      <div class="pf-projects">
+
+        <div class="pf-project-card featured">
+          <div class="pf-project-header">
+            <div>
+              <div class="pf-project-tags">
+                <span class="project-tag web">Web</span>
+                <span class="pf-status"><span class="dot online-dot"></span> 운영 중</span>
+              </div>
+              <h3>JSK Dashboard</h3>
+            </div>
+          </div>
+          <p>JS-SERVER 전체 인프라를 모니터링하고 관리하는 통합 대시보드. PM2 프로세스 관리, 실시간 시스템 상태 확인, 디스코드 알림 연동, 디스코드 OAuth 로그인을 지원합니다.</p>
+          <div class="pf-project-tech">
+            <span class="tech">Node.js</span>
+            <span class="tech">Express</span>
+            <span class="tech">Socket.io</span>
+            <span class="tech">PM2 API</span>
+            <span class="tech">Discord OAuth</span>
+            <span class="tech">SQLite</span>
+          </div>
+          <a class="project-link" href="https://admin.js-server.click" target="_blank" rel="noopener">바로가기 →</a>
+        </div>
+
+        <div class="pf-project-card featured">
+          <div class="pf-project-header">
+            <div>
+              <div class="pf-project-tags">
+                <span class="project-tag web">Web</span>
+                <span class="pf-status"><span class="dot online-dot"></span> 운영 중</span>
+              </div>
+              <h3>PathLog</h3>
+            </div>
+          </div>
+          <p>배달 경로 최적화 시스템. Google Maps API와 Gemini AI를 활용해 효율적인 배달 동선을 자동 계산하고, 체크리스트 및 영수증 관리 기능을 제공합니다.</p>
+          <div class="pf-project-tech">
+            <span class="tech">Node.js</span>
+            <span class="tech">Express</span>
+            <span class="tech">Google Gemini AI</span>
+            <span class="tech">Google Maps API</span>
+            <span class="tech">SQLite</span>
+            <span class="tech">Canvas</span>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a class="project-link" href="https://delivery.js-server.click" target="_blank" rel="noopener">바로가기 →</a>
+            <a class="project-link" href="https://github.com/dbstjdrbl7/Pathlog" target="_blank" rel="noopener" style="color:var(--muted2)">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="pf-project-card">
+          <div class="pf-project-tags">
+            <span class="project-tag bot">Bot</span>
+            <span class="pf-status"><span class="dot online-dot"></span> 운영 중</span>
+          </div>
+          <h3>JSK Discord Bot</h3>
+          <p>서버 알림, 지원 접수, 상태 조회를 담당하는 메인 디스코드 봇. ServiceBot과 함께 자동화 파이프라인을 구성합니다.</p>
+          <div class="pf-project-tech">
+            <span class="tech">Node.js</span>
+            <span class="tech">Discord.js</span>
+          </div>
+        </div>
+
+        <div class="pf-project-card">
+          <div class="pf-project-tags">
+            <span class="project-tag infra">Plugin</span>
+            <span class="pf-status"><span class="dot online-dot"></span> 운영 중</span>
+          </div>
+          <h3>JS-Server-Whitelist</h3>
+          <p>Velocity 프록시용 커스텀 화이트리스트 플러그인. 디스코드 계정 연동 기반으로 미인증 유저를 프록시 단에서 자동 차단합니다.</p>
+          <div class="pf-project-tech">
+            <span class="tech">Java</span>
+            <span class="tech">Velocity API</span>
+            <span class="tech">Discord OAuth</span>
+          </div>
+        </div>
+
+        <div class="pf-project-card">
+          <div class="pf-project-tags">
+            <span class="project-tag music">Music</span>
+            <span class="pf-status"><span class="dot online-dot"></span> 운영 중</span>
+          </div>
+          <h3>SMB Music Player</h3>
+          <p>yt-dlp 기반 서버사이드 음악 스트리밍 플레이어. YouTube에서 오디오를 추출해 실시간 스트리밍을 제공합니다.</p>
+          <div class="pf-project-tech">
+            <span class="tech">Node.js</span>
+            <span class="tech">Socket.io</span>
+            <span class="tech">yt-dlp</span>
+          </div>
+        </div>
+
+        <div class="pf-project-card">
+          <div class="pf-project-tags">
+            <span class="project-tag infra">Plugin</span>
+            <span class="pf-status"><span class="dot online-dot"></span> 운영 중</span>
+          </div>
+          <h3>CustomSurvival</h3>
+          <p>JS-SERVER DD 서버용 자체 개발 생존 커스텀 플러그인. 서버 고유의 게임플레이 경험을 제공합니다.</p>
+          <div class="pf-project-tech">
+            <span class="tech">Java</span>
+            <span class="tech">Paper API</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-inner contact-inner">
+      <div class="section-label">CONTACT</div>
+      <h2>연락하기</h2>
+      <p>프로젝트 관련 문의나 협업 제안은 언제든지 환영합니다.</p>
+      <div class="pf-contact-grid">
+        <a class="pf-contact-card" href="https://github.com/dbstjdrbl7" target="_blank" rel="noopener">
+          <div class="pf-contact-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </div>
+          <div>
+            <div class="pf-contact-label">GitHub</div>
+            <div class="pf-contact-value">@dbstjdrbl7</div>
+          </div>
+        </a>
+        <a class="pf-contact-card" href="mailto:dbstjdrbl7@gmail.com">
+          <div class="pf-contact-icon">✉️</div>
+          <div>
+            <div class="pf-contact-label">Email</div>
+            <div class="pf-contact-value">dbstjdrbl7@gmail.com</div>
+          </div>
+        </a>
+        <a class="pf-contact-card" href="https://admin.js-server.click/support" target="_blank" rel="noopener">
+          <div class="pf-contact-icon">🛠️</div>
+          <div>
+            <div class="pf-contact-label">지원 센터</div>
+            <div class="pf-contact-value">admin.js-server.click</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2025 Kwon Jun Seok · Student Developer</span>
+  </footer>
+
+</body>
+</html>
